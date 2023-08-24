@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page of Shopping App</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container border-success ">
+    <div class="expenses p-3 ">
+      <form id="add-items"  >
+        <label for="price"  class="form-label my-2">Selling Price : </label>
+        <input type="number" id="price" class="form-control ">
+        <label for="product" class=" form-label my-2">Product Name</label>
+        <input type="text" id="product" class="form-control"> 
+ 
+        <label for="Category" class="form-label my-2">Category :</label>
+        <select  class="form-select" name="Category" id="Category" >
+          <option value="Electronics">Electronics</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Beauty">Beauty</option>
+          <option value="Home">Home</option>
+          <option value="Sports">Sports</option>
+          <option value="Books">Books</option>
+          <option value="Toys">Toys</option>
+        </select>
+        <button class="btn btn-dark  m-2">Add Products</button>
+      </form>
+    </div>
+    
+    </div>
+    <div class="d-flex flex-column mt-2 w-100 text-white f-style" id="items">
+      <h3 class="fw-bold">#Electronics</h3>
+      <ul id="Electronics" class="list-group">
+      </ul>
+      <h3 class="fw-bold">#Clothing & Fashion</h3>
+      <ul id="Clothing" class="list-group">
+      </ul>
+      <h3 class="fw-bold">#Beauty & Personal Care</h3>
+      <ul id="Beauty" class="list-group">
+      </ul>
+      <h3 class="fw-bold">#Home & Furniture</h3>
+      <ul id="Home" class="list-group">
+      </ul>
+      <h3 class="fw-bold">#Sports & Outdoors</h3>
+      <ul id="Sports" class="list-group">
+      </ul>
+      <h3 class="fw-bold">#Books & Stationery</h3>
+      <ul id="Books" class="list-group">
+      </ul>
+      <h3 class="fw-bold">#Toys & Games</h3>
+      <ul id="Toys" class="list-group">
+      </ul>
+  </div>
+  <!-- <script src="index.js"></script> -->
+  <script src="index2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
